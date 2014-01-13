@@ -1,0 +1,285 @@
+body{
+	overflow-x: hidden;
+	color: #d8d8d8;
+}
+#Sidebar {
+	background-color: #303030;
+	padding-right: 0px;
+}
+
+#MainContent{
+	background-color: #3e4344;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#Logo{
+	height: 150px;
+	background-color: #f5f5f5;
+}
+
+#Logo h1{
+	margin-top: 0px;
+	padding-top: 2.5%;
+	padding-left: 6%;
+	font-style: italic;
+	color:#303030;
+}
+#Logo h1 span{
+	color: #ff900d;
+	padding-left: 2%;
+}
+
+ul.navbar{
+	font-size: 16px;
+	margin-top: 100px;
+
+}
+ul.navbar li{
+	margin-left: 15%;
+	border-left: solid #474747 1px;
+	clear:both;
+}
+ul.navbar li a{
+	text-transform:uppercase;
+	color: #909393;
+	    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul.navbar li a:hover{
+	color: #1fbf97;
+}
+ul.navbar li a.active{
+color: #1fbf97;
+
+}
+
+ul.dropmenu {
+	float: left;
+	font-size: 12px;
+}
+
+ul.navbar li.dropdown ul{
+	margin-left: -15%;
+	list-style-type: none;
+}
+
+ul.navbar li.dropdown ul li{
+	padding: 10px 10px;
+}
+ul.navbar li.dropdown ul li a{
+	padding-left: 15px;
+	text-decoration: none;
+}
+ul.navbar li.dropdown ul li span{
+	font-size: 8px;
+	margin-left: -12px;
+	color: #474747;
+}
+
+h1.pageHead{
+	color: #a2a1a1;
+	font-size: 30px;
+	padding-left: 35px;
+	font-weight: bold;
+}
+
+h1.pageHead span.carrots{
+	font-size: 45px;
+}
+h1.pageHead span{
+	color: #ff900d;
+}
+h1.pageHead span.left{
+	padding-right: 5px;
+}
+h1.pageHead span.right{
+	padding-left: 5px;
+}
+
+#home p.welcome{
+	padding-left: 45px;
+	font-size: 14px;
+	color: #d8d8d8;
+}
+
+div.Links{
+color: #ff900d;
+opacity: 0.7;
+text-align: right;
+}
+
+
+
+div.p1 {
+	padding: 0px;
+	position: relative;
+	overflow:hidden;
+}
+
+div.p1  img{
+	z-index: -1;
+}
+
+div.ProjectPreviews{
+	width: auto;
+	overflow:hidden;
+}
+
+div.panel-heading h3{
+	color: #33333e;
+}
+div.imgOverlay{
+	position: absolute;
+	left: -3000px;
+	top: 0px;
+}
+
+div.projOverlay{
+	width: 100%;
+	height: 100%;
+	background-color: #ff900d;
+	opacity: 0.95;
+}
+
+div.projOverlay h3{
+	opacity: 1;
+	color: black;
+	padding-left: 5%;
+	position: absolute;
+	bottom: 55%;
+}
+
+div.projOverlay small{
+	opacity: 1;
+	color: white;
+	margin-left: 1%;
+	position: absolute;
+	bottom: 45%;
+}
+
+div.demo{
+color: #ff900d;
+text-align: center;
+font-size: 16px;
+font-weight: bold;
+padding: 15px;
+}
+
+div.panel{
+	border: 0px;
+}
+
+div.Experinces p{
+
+	color: #d8d8d8;
+	font-size: 12px;
+}
+
+div.Experinces span{
+	color: #ff900d;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.head{
+	color: #ff900d;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.container h1, div.container span, div.container span.carrots{
+font-size: 20px;
+}
+
+div.container span.slash{
+font-size: 16px;
+}
+
+div.margined{
+margin-top: 80px;
+}
+div.padded{
+margin-top: 30px;
+}
+
+div.imgpre img{
+border:3px solid #ff900d;
+-webkit-border-radius: 16px;
+-moz-border-radius: 16px;
+border-radius: 16px;
+}
+
+div.intro {
+background-color: #464a4b;
+
+border:2px solid #ff900d;
+-webkit-border-radius: 16px;
+-moz-border-radius: 16px;
+border-radius: 16px;
+}
+
+#contact div.content{
+background-color: #464a4b;
+border:2px solid #ff900d;
+-webkit-border-radius: 16px;
+-moz-border-radius: 16px;
+border-radius: 16px;
+padding: 30px;
+margin: 0 auto;
+}
+
+#formwarnings{
+padding-top: 10px;
+font-weight: bold;
+}
+
+div.break{
+height: 1px;
+background-color: #ff900d;
+margin-bottom: 12px;
+margin-top: 12px;
+}
+
+/* default state */
+.state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+
+    z-index: 1;
+}
+
+/* small desktop */
+@media all and (max-width: 1200px) {
+    .state-indicator {
+        z-index: 2;
+    }
+}
+
+/* tablet */
+@media all and (max-width: 1024px) {
+    .state-indicator {
+        z-index: 3;
+    }
+}
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .state-indicator {
+        z-index: 4;
+    }
+}
+
+select{
+width: 100%;
+text-align: center;
+background-color: #303030;
+text-transform: uppercase;
+color: #ff900d;
+font-weight: bold
+}
+
